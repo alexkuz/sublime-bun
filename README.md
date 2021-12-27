@@ -16,3 +16,6 @@ Plugin is not publushed yet on [Package Control](https://packagecontrol.io/), to
   - `syntax` - ST syntax definition that should be applied for that file;
   - `pretty` - indicates if prettifier should be applied (works for JS/TS files);
 - `prettify_options` - pretifier options (see [Configuration struct](https://github.com/dprint/dprint-plugin-typescript/blob/64064984dc24339249c6425a1401f93d94887967/src/configuration/types.rs#L258) for full list)
+
+## Syntax Highlighting
+For `bun.lockb` syntax highlighting use [Yarn.Lock Syntax Highlighting](https://github.com/alexkuz/sublime-yarn-lock) package.
