@@ -5,7 +5,7 @@ Bun binary files viewer and other Bun-related stuff
 
 Plugin is not publushed yet on [Package Control](https://packagecontrol.io/), to install it follow these steps:
 
-- run `Package Control: Add Repository` command, add `https://github.com/alexkuz/sublime-bun` there;
+- run `Package Control: Add Repository` command, add `https://raw.githubusercontent.com/alexkuz/sublime-text-repository/main/repository.json` there;
 - find and select `sublime-bun` package in `Install Package` menu.
 
 ## Settings

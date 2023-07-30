@@ -7,7 +7,7 @@ import json
 import sublime
 import sublime_plugin
 from subprocess import PIPE, Popen
-from .dprint import dprint_python_bridge
+import dprint_python_bridge
 
 PLUGIN_NAME = "Bun"
 
