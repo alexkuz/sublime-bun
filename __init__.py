@@ -7,7 +7,6 @@ import json
 import sublime
 import sublime_plugin
 from subprocess import PIPE, Popen
-import dprint_python_bridge
 
 PLUGIN_NAME = "Bun"
 
@@ -118,7 +117,11 @@ class BunPreviewBinaryCommand(sublime_plugin.TextCommand):
         syntax = config.get("syntax", "scope:text.plain")
         if not check_syntax(syntax):
             syntax = "scope:text.plain"
-        prettify = config.get("pretty", False)
+
+        # Bun doesn't use node_modules.bun anymore, so there's no need to prettify
+
+        prettify = False # config.get("pretty", False)
+
         prettify_options = get_setting(self.view, "prettify_options", {})
         win_id = self.view.window().id()
 
@@ -136,6 +139,7 @@ class BunPreviewBinaryCommand(sublime_plugin.TextCommand):
 
     def prettify(self, output, filepath, win_id, prettify_options):
         try:
+            import dprint_python_bridge
             options = json.dumps(prettify_options)
             prettified = dprint_python_bridge.format_text(filepath, output, options)
         except Exception as err:

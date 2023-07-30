@@ -4,15 +4,6 @@
     {
       "pattern": "bun.lockb",
       "syntax": "scope:text.yarnlock"
-    },
-    {
-      "pattern": "node_modules.bun",
-      "syntax": "scope:source.js",
-      "pretty": true
     }
-  ],
-  "prettify_options": {
-    "indentWidth": 2,
-    "lineWidth": 120
-  }
+  ]
 }
